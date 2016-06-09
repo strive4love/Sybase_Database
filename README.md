@@ -184,3 +184,19 @@ Starting many current parallel bcp sessions may cause Adaptive Server to run out
 When you copy in to a table, bcp acquires an exclusive intent lock on the table, and either page or row locks, depending on the locking scheme. If you are copying in very large tables, and especially if you are performing simultaneous copies into a partitioned table, this can require a very large number of locks.To avoid running out of locks: Set the number of locks configuration parameter high enough, or Use the -b batchsize bcp flag to copy smaller batches. If you do not use the -b flag, the entire copy operation is treated as a single batch.
 
 # Fast, Fast-logged, and Slow bcp
+MXG_BODEV1              	  420000.0 MB	sa                      	4	Jun 22, 2013      	select into/bulkcopy/pllsort, trunc log on chkpt, abort tran on log full
+MXG_BODEV2              	  420000.0 MB	sa                      	5	Jun 22, 2013      	select into/bulkcopy/pllsort, trunc log on chkpt, abort tran on log full
+MXG_BODEV3              	  420000.0 MB	sa                      	6	Jul 08, 2013      	select into/bulkcopy/pllsort, trunc log on chkpt, abort tran on log full
+MXG_BODEV5              	  321200.0 MB	sa                      	8	Jun 23, 2013      	select into/bulkcopy/pllsort, trunc log on chkpt, abort tran on log full
+MXG_BODEV8              	  420000.0 MB	sa                      	10	Jun 23, 2013      	select into/bulkcopy/pllsort, trunc log on chkpt, abort tran on log full
+MXG_ENV906              	  420000.0 MB	sa                      	14	May 31, 2016      	select into/bulkcopy/pllsort, trunc log on chkpt, abort tran on log full
+MXG_IRDFX_DEV9          	  420000.0 MB	sa                      	13	May 25, 2016      	no options set ！！！！！
+MXG_PRC                 	  420000.0 MB	sa                      	9	Jun 23, 2013      	select into/bulkcopy/pllsort, trunc log on chkpt, no chkpt on recovery, abort tran on log full
+MXG_SABREPV             	  420000.0 MB	sa                      	7	Jun 23, 2013      	select into/bulkcopy/pllsort, trunc log on chkpt, abort tran on log full
+MXML_BODEV1             	   91192.0 MB	sa                      	12	Jun 24, 2013      	select into/bulkcopy/pllsort, trunc log on chkpt, abort tran on log full
+MXML_BODEV2             	   91192.0 MB	sa                      	11	Jun 24, 2013      	select into/bulkcopy/pllsort, trunc log on chkpt, abort tran on log full
+master                  	      50.0 MB	sa                      	1	Jun 19, 2013      	mixed log and data
+model                   	       4.0 MB	sa                      	3	Jun 19, 2013      	mixed log and data
+sybsystemdb             	      54.0 MB	sa                      	31513	Jun 19, 2013      	mixed log and data
+sybsystemprocs          	     200.0 MB	sa                      	31514	Jun 19, 2013      	trunc log on chkpt, mixed log and data
+tempdb                  	   20004.0 MB	sa                      	2	Mar 24, 2016      	select into/bulkcopy/pllsort, trunc log on chkpt, mixed log and data
