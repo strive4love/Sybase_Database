@@ -157,6 +157,8 @@ The utility is located in:
 (UNIX) $SYBASE/$SYBASE_OCS/bin/bcp_r(for parallel bcp)  
 (Windows) %SYBASE%\%SYBASE_OCS%\bin\bcp.exe 
 
+# Note: bcp raises an error and stops if the number of rows to be copied in or out exceeds 2147483647.
+
 # bcp Modes
 bcp in works in one of three modes.
 Slow bcp – logs each row insert that it makes, used for tables that have one or more indexes.
